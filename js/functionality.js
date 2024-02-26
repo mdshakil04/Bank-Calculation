@@ -10,6 +10,12 @@ document.getElementById("btn-deposit").addEventListener("click", function(){
 
     const totalDeposit = previousDeposit + depositAmount;
     depositElement.innerText = totalDeposit;
+// ------------------------------------------------------------
+    const totalBalanceElement = document.getElementById('total-balance');
+    const totalBalanceString = totalBalanceElement.innerText;
+    const totalBalance = parseFloat(totalBalanceString);
+    const newBalance = totalBalance + depositAmount;
+    totalBalanceElement.innerText = newBalance;
 
     depositField.value = '';
 })
