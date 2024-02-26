@@ -12,7 +12,7 @@
         <div class=" info-container grid md:grid-cols-3 gap-4 mt-8">
             <div class=" bg-green-400 p-8 rounded-lg text-white shadow-2xl">
                 <h1 class=" text-4xl">Deposit</h1>
-                <h2 class=" text-6xl">$0</h2>
+                <h2 class=" text-6xl">$<span id="deposit-element">00</span></h2>
             </div>
             <div class=" bg-yellow-400 p-8 rounded-lg text-white shadow-2xl">
                 <h1 class=" text-4xl">Withdraw</h1>
@@ -26,15 +26,16 @@
         <div class=" grid md:grid-cols-2 gap-8 mt-4">
             <div class="bg-gradient-to-r from-indigo-500 p-8 rounded-lg shadow-2xl ">
                 <h2 class=" text-white text-3xl mb-2">Deposit Amount</h2>
-                <input class=" p-2 rounded-lg" placeholder="Type your desire amount" type="text"><br>
-                <button class=" font-bold bg-sky-500 hover:bg-sky-700 text-white p-2 mt-2 rounded-lg " type="submit">Deposit</button>
+                <input id="deposit-field" class=" p-2 rounded-lg" placeholder="Type your desire amount" type="text"><br>
+                <button id="btn-deposit" class=" font-bold bg-sky-500 hover:bg-sky-700 text-white p-2 mt-2 rounded-lg " type="submit">Deposit</button>
             </div>
-            <div class="bg-gradient-to-r from-yellow-700 p-8 rounded-lg shadow-2xl"> 
+            <div class="bg-gradient-to-l from-cyan-600 p-8 rounded-lg shadow-2xl"> 
                 <h2 class=" text-white text-3xl mb-2">Withdraw Amount</h2>
-                <input class=" text-black p-2 rounded-lg" placeholder="Type your desire amount" type="text"><br>
+                <input id="withdraw-field" class=" text-black p-2 rounded-lg" placeholder="Type your desire amount" type="text"><br>
                 <button class=" font-bold bg-sky-500 hover:bg-sky-700 text-white p-2 mt-2 rounded-lg " type="submit">Withdraw</button>
             </div>
         </div>
     </main>
+    <script src="js/functionality.js"></script>
 </body>
 </html>
