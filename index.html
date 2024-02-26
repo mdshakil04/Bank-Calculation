@@ -4,35 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Bank Calculation</title>
+    <title>Simple Bank Calculations</title>
 </head>
-<body>
-    <h1 class=" text-4xl text-center mt-4">Welcome to my <span class=" font-semibold text-cyan-600"> Awesome Bank</span> !!!</h1>
-    <main class=" container mx-auto">
-        <div class=" info-container grid grid-cols-3 gap-4 mt-8">
-            <div class=" bg-green-400 p-8 rounded-lg text-white">
-                <h1 class=" text-4xl">Deposit</h1>
-                <h2 class=" text-6xl">$0</h2>
+<body class="">
+    <header class="">
+        <h1 class=" text-5xl text-center">Welcome to <span class=" text-cyan-400">Awesome Bank</span></h1>
+    </header>
+    <main class=" container mx-auto mt-4 w-1/2">
+        <section class=" bg-green-200 p-8 rounded-lg">
+            <h3 class=" mb-4 text-3xl">Please Login...</h3>
+            <div>
+                <h2 class=" font-bold text-xl mb-2">Email</h2>
+                <input class=" mb-4 p-2 w-full rounded-lg" placeholder=" Type your email" type="email" name="email" id=""><br>
+                <h2 class=" font-bold text-xl mb-2">Password</h2>
+                <input class=" p-2 w-full rounded-lg" placeholder="Enter your password" type="password" name="password" id=""><br>
+                <button class=" bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 mt-4 p-2 rounded-lg text-white font-bold" type="submit">Submit</button>
             </div>
-            <div class=" bg-yellow-400 p-8 rounded-lg text-white">
-                <h1 class=" text-4xl">Withdraw</h1>
-                <h2 class=" text-6xl">$0</h2>
-            </div>
-            <div class="bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 p-8 rounded-lg text-white">
-                <h1 class=" text-4xl">Balance</h1>
-                <h2 class=" text-6xl">$1200</h2>
-            </div>
-        </div>
-        <div class=" grid grid-cols-2 gap-8 mt-4">
-            <div class="bg-gradient-to-r from-indigo-500 p-8 rounded-lg ">
-                <h2 class=" text-white text-3xl">Deposit Amount</h2>
-                <input class=" p-2 rounded-lg" placeholder="Type your desire amount" type="text">
-            </div>
-            <div class="bg-gradient-to-r from-cyan-500 to-blue-500 p-8 rounded-lg "> 
-                <h2 class=" text-white text-3xl">Withdraw Amount</h2>
-                <input class=" text-black p-2 rounded-lg" placeholder="Type your desire amount" type="text">
-            </div>
-        </div>
+        </section>
     </main>
 </body>
 </html>
