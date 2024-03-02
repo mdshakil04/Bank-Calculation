@@ -37,7 +37,6 @@ document.getElementById("btn-deposit").addEventListener("click", function(){
     const totalWithdraw = withdrawFieldValue + withdrawAmount;
     console.log(totalWithdraw)
     withdrawElement.innerText = totalWithdraw;
-    widthdrawField.value = '';
     // totalWithdraw.innerText = '';
     // -------------total Calculations---------------------
     const totalBalanceElement = document.getElementById('total-balance');
