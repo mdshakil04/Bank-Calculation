@@ -23,26 +23,22 @@ document.getElementById("btn-deposit").addEventListener("click", function(){
 })
  // -----------------Withdrawal functionality ----------------
  document.getElementById('btn-withdraw').addEventListener('click', function(){
-    // console.log('Withdraw button clicked')
+    
     const widthdrawField = document.getElementById('withdraw-field');
-    // console.log(widthdrawField)
     const withdrawFieldValueString = widthdrawField.value;
-    // console.log(withdrawFieldValueString)
     const withdrawFieldValue = parseFloat(withdrawFieldValueString);
+
     const withdrawElement = document.getElementById('withdraw-total');
-    // console.log(withdrawElement)
     const withdrawElementString = withdrawElement.innerText;
-    // console.log(withdrawElementString)
     const withdrawAmount = parseFloat(withdrawElementString);
+
     const totalWithdraw = withdrawFieldValue + withdrawAmount;
-    console.log(totalWithdraw)
     withdrawElement.innerText = totalWithdraw;
-    // totalWithdraw.innerText = '';
     // -------------total Calculations---------------------
     const totalBalanceElement = document.getElementById('total-balance');
     const totalBalanceString = totalBalanceElement.innerText;
     const totalBalance = parseFloat(totalBalanceString);
+
     const balanceAfterWithdraw = totalBalance - totalWithdraw;
     totalBalanceElement.innerText = balanceAfterWithdraw;
-    
  })
