@@ -38,7 +38,7 @@ document.getElementById("btn-deposit").addEventListener("click", function(){
     const totalBalanceElement = document.getElementById('total-balance');
     const totalBalanceString = totalBalanceElement.innerText;
     const totalBalance = parseFloat(totalBalanceString);
-
+    console.log(totalBalance)
     const balanceAfterWithdraw = totalBalance - totalWithdraw;
     totalBalanceElement.innerText = balanceAfterWithdraw;
  })
